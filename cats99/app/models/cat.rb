@@ -14,5 +14,7 @@
 
 class Cat < ApplicationRecord
 
-  
+  validates :name, presence: true, uniqueness: true
+  validates :color, presence: true
+  validates :sex, presence: true
 end
